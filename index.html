@@ -1,138 +1,41 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Каталог кепок</title>
-  <style>
-    
-    html {
-  overflow-y: scroll;
-}
-
-body {
-  min-height: 200vh;
-}
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-    }
-
-    header {
-      background: #222;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      position: relative;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    .translate-btn {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      background: #0078d7;
-      color: white;
-      border: none;
-      padding: 8px 12px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-
-    .catalog {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .item {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      width: 250px;
-      margin: 15px;
-      padding: 15px;
-      text-align: center;
-    }
-
-    .item img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .item h2 {
-      font-size: 18px;
-      margin: 10px 0;
-    }
-
-    .item p {
-      color: #555;
-      font-size: 14px;
-    }
-
-    .item button {
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #222;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .item button:hover {
-      background: #444;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottega Veneta Style Header</title>
+    <style>
+        header {
+            background-color: #2f2f2f;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .nav-icons {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-icons a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-
-  <header>
-    <h1>Каталог кепок</h1>
-    <button class="translate-btn" onclick="translateToKazakh()">KZ</button>
-  </header>
-
-  <div class="catalog">
-    <div class="item">
-      <img src="cap1.jpg" alt="Кепка 1">
-      <h2>Кепка Classic</h2>
-      <p>Стильная классическая кепка для повседневной носки.</p>
-      <button>Купить</button>
-    </div>
-
-    <div class="item">
-      <img src="cap2.jpg" alt="Кепка 2">
-      <h2>Кепка Sport</h2>
-      <p>Лёгкая спортивная кепка для активного отдыха.</p>
-      <button>Купить</button>
-    </div>
-
-    <div class="item">
-      <img src="cap4.jpg" alt="Кепка 3">
-      <h2>Кепка Premium</h2>
-      <p>Премиальная кепка из высококачественных материалов.</p>
-      <button>Купить</button>
-    </div>
-  </div>
-
-  <script>
-    function translateToKazakh() {
-      let url = window.location.href;
-      let translateUrl = "https://translate.google.com/translate?sl=ru&tl=kk&u=" + encodeURIComponent(url);
-      window.open(translateUrl, "_blank");
-    }
-  </script>
-
-<a class="whatsapp-btn" href="https://wa.me/77470383524" target="_blank"
-   style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-  <img src="whatsapp1.png" alt="WhatsApp" style="width: 60px; height: 60px;">
-</a>
-  
+    <header>
+        <div class="logo">Bottega Veneta</div>
+        <div class="nav-icons">
+            <a href="#">Search</a>
+            <a href="#">Menu</a>
+        </div>
+    </header>
 </body>
 </html>
